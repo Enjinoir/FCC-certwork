@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Survey" charset="UTF-8" content="Survey Page">
+    <link rel="stylesheet" type="text/css" href="surveypage.css" <link
+        href="https://fonts.googleapis.com/css?family=Alegrya" "https://fonts.googleapis.com/css?family=Alegrya-Sans">
+    <title type="text">"Survey Page"</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+
+<header>
+    <h1 id="title">
+        Survey Page
+    </h1>
+    <p id="description">
+        Survey about stuff
+    </p>
+</header>
+<div class="wrapper">
+    <div class="questions">
+        <form id="survey-form" method="GET" acton="http://127.0.0.1:5500/" target="_blank">
+            <div class="container">
+                <div class="quest">
+                    <label for="name" class="label" id="name-label">*Name</label>
+                </div>
+                <div class="answ">
+                    <input class="inp" type="text" name="name" id="name" placeholder="Enter your Name" required>
+                </div>
+            </div>
+            <div class="container">
+                <div class="quest">
+                    <label for="email" class="label" id="email-label">*email:</label>
+                </div>
+                <div class="answ">
+                    <input class="inp" type="email" name="email" id="email" placeholder="Enter your Email" required>
+                </div>
+            </div>
+            <div class="container">
+                <div class="quest">
+                     <label for="number" class="label" id="number-label">*Age:</label>
+                </div>
+                <div class="answ">
+                     <input class="inp" type="number" name="number" id="number" min="1" max="150" placeholder="Age" required>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="quest">
+                    <label for="dropdown" class="label">Context</label>
+                </div>
+                <div class="answ">  
+                    <select class="inp" name="Poor Decisions" id="dropdown">
+                        <option value="existing">Struggling to be?</option>
+                        <option value="not human">Worried they'll see your true form?
+                            </optoin>
+                        <option value="dilema">Should you consume another soul?</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container">
+                <div class="quest">
+                    <p class="label">Do you like to cultivate smaller organic life forms?</p>
+                </div>
+                <div class="answ">  
+                    <ul>
+                        <li class="chk">
+                            <input  type="checkbox" name="checkOpt" value="1">
+                            <label>Plants</label>
+                        </li>
+                        <li class="chk">
+                            <input type="checkbox" name="checkOpt" value="2">
+                            <label >Bacteria</label>
+                        </li>
+                        <li class="chk">
+                            <input type="checkbox" name="checkOpt" value=3>
+                            <label >Viruses</label>
+                        </li>
+                        <li class="chk"> 
+                            <input type="checkbox" name="checkOpt" value="4">
+                            <label>Parasitic Worms</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="quest">
+                <p class="label">Living is similar to pasta in that</p>
+            </div>
+                <div class="answ"> 
+                    <ul>
+                        <li class="chk">
+                            <input type="radio" name="radioOpt" value="1">
+                            <label>Fufilling</label>
+                        </li>
+                        <li class="chk">
+                            <input type="radio" name="radioOpt" value="2">
+                            <label>Onion density is to high</label>
+                        </li>
+                        <li class="chk">
+                            <input type="radio" name="radioOpt" value="3">
+                            <label>Tangled</label>
+                        </li>
+                        <li class="chk">
+                            <input type="radio" name="radioOpt" value="4">
+                            <label>Very Red</label>
+                        </li>
+                        <li class="chk">
+                            <input type="radio" name="radioOpt" value="5">
+                            <label>None of this makes sense</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="quest">
+                    <label class="label" for="textinput">How do you feel about lotus pods?</label>
+                </div>
+                <div class="answ">
+                    <textarea id="textinput" name="textinput" rows="10" cols="30"></textarea>
+                </div>
+            </div>
+            <footer>
+                    <button class="nav" id="submit" type="submit">Submit</button>
+            </footer>
+        </form>
+    </div>
+</div>
+
+</html>
