@@ -6,3 +6,19 @@ body {
 .barlock {
     position: fixed;
 }
+.wrapper {
+    max-width: 1000px;
+}
+
+.iconcont .icon img{
+    max-width: 300px;
+}
+
+.picon img{
+    max-width: 500px;
+    display: block;
+}
+
+.icon {
+    display: block;
+}
