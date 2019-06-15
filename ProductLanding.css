@@ -2,10 +2,145 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
+    background: #312f30;
 }
 .barlock {
     position: fixed;
+    top: 0;
+    width: 100%;
+    height: 230px;
+    /* overflow: hidden; */
+    background: #E50070;
+    z-index: 5;
+    box-shadow: 20px 0px 5px #000000;
 }
+
+.barlock .barlockInner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.barlock h1,
+.barlock nav,
+.barlock p {
+	display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.barlock h1,
+.barlock nav a {
+	line-height: 230px;
+}
+
+.barlock p {
+    top: 132px;
+}
+
+.barlock h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
+
+.barlock nav {
+	float: right;
+}
+
+.barlock nav a {
+	color: #f495c3;
+	font-weight: 700;
+	margin: 20px 0 0 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.barlock nav a:hover {
+	color: #333;
+}
+
+/* Transitions and class for reduced height */
+/* .cbp-af-header h1,
+.cbp-af-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+} */
+
+.barlock.barlock-shrink {
+	height: 90px;
+}
+
+.barlock.barlock-shrink h1,
+.barlock.barlock-shrink nav a {
+	line-height: 90px;
+}
+
+.barlock.barlock-shrink h1 {
+	font-size: 2em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.barlock .barlockInner {
+		width: 100%;
+	}
+
+	.barlock h1,
+	.barlock nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.barlock h1,
+	.barlock nav a {
+		line-height: 115px;
+	}
+
+	.barlock nav a {
+		margin: 0 10px;
+	}
+
+	.barlock.barlock-shrink h1,
+	.barlock.barlock-shrink nav a {
+		line-height: 45px;
+	}
+
+	.barlock.barlock-shrink h1 {
+		font-size: 2em;
+	}
+
+	.barlock.barlock-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.barlock nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.barlock nav a,
+	.barlock.barlock-shrink nav a {
+		line-height: 1;
+	}
+}
+
+main {
+    margin-top: 230px;
+}
+
 .wrapper {
     max-width: 1000px;
 }
@@ -21,4 +156,7 @@ body {
 
 .icon {
     display: block;
+}
+.SelTiles {
+    display: inline-block;
 }

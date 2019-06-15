@@ -11,15 +11,17 @@
 
 <body>
 	<header id="header" class="barlock">
-		<nav>container for top bar
+		<div class="barlockInner">
 			<div>
 				<h1>Trace</h1>
-				<p>A Sendai Corp Product</p>
+				<p>A Sendai Corp Product&copy</p>
 			</div>
-			<Button><a href="#"></a>Features</button>
-			<button><a href="#"></a>Specs</a></button>
-			<button><a href="#"></a>Decks</a></button>
-		</nav>
+			<nav>
+				<a href="#Features">Features</a>
+				<a href="#Specs">Specs</a>
+				<a href="#Decks">Decks</a>
+			</nav>
+		</div>
 	</header>
 	<main>
 		<article>
@@ -30,17 +32,14 @@
 			</form>
 		</article>
 		<div class="wrapper">
-			<section>
-				<div>
-					<a class="picon" href="https://blog.hackster.io/a-commodore-64-makes-a-nice-cyberdeck-with-help-from-a-raspberry-pi-b1bb8a6acec" data-title="mods"
-						data-desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ultricies tristique aliquet.">
-						<img src="https://cdn-images-1.medium.com/max/1600/1*wnjjulsc5VKd54OWulLBfg.jpeg"
-							alt="HUD Helmet">
-						<!--need to create small illustrations to use here, one for each section--> </a>
-					<iframe id="pvideo" height="320px" src="https://www.youtube.com/watch?v=hrJiRK6PA9w" frameborder="0" allowfullscreen></iframe>
+			<section id="Features">
+				<div class="vidcont">
+					<iframe height="320" src="https://www.youtube.com/embed/hrJiRK6PA9w" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 			</section>
-			<section>
+			<section id="Specs">
 				<div class="iconcont">
 					<a class="icon" href="https://5060.bigcartel.com/product/test-subject-56" data-title="mods"
 						data-desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ultricies tristique aliquet.">
@@ -67,46 +66,46 @@
 						<!--need to create small illustrations to use here, one for each section-->
 					</a>
 			</section>
-			<section>
-				<div>
+			<section id="Decks">
+				<div class="SelTiles">
 					<div class="LvlTtitle">
 						<h4>
 							TItle text
 						</h4>
 					</div>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
 					</ul>
 					<button class"select">Select</button>
 				</div>
-				<div>
+				<div class="SelTiles">
 					<div class="LvlTtitle">
 						<h4>
 							TItle text
 						</h4>
 					</div>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
 					</ul>
 					<button class"select">Select</button>
 				</div>
-				<div>
+				<div class="SelTiles">
 					<div class="LvlTtitle">
 						<h4>
 							TItle text
 						</h4>
 					</div>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
+						<li>Lorem Epsum</li>
 					</ul>
 					<button class"select">Select</button>
 				</div>
